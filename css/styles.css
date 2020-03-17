@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+  min-width: 620px;
+}
+/* Header */
+header {
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+}
+/* Upper header */
+header .upper-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .upper-header .search-div {
+  margin-right: 5rem;
+}
+header .upper-header form {
+  display: inline-flex;
+}
+form .input-div {
+  height: 1.8rem;
+}
+header input {
+  background-color: #eee;
+}
+header button {
+  background-color: grey;
+  color: #fff;
+  margin-left: 3px;
+  width: 80px;
+  height: 35px;
+  text-transform: uppercase;
+}
+button {
+  cursor: pointer;
+}
+input, button{
+  height: 100%;
+  border: none;
+  padding: 3px;
+  padding-left: 7px;
+}
+/* @Navbar */
+.nav-div nav {
+  background-color: #ff1111;
+  height: 50px;
+}
+header ul {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-evenly;
+  list-style: none;
+}
+header ul a {
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+}
+header ul a:hover {
+  color: grey;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.nav-heart {
+  font-size: 10px;
+  color: grey;
+}
+a {
+  text-decoration: none;
+}
+.active  {
+  background-color: grey;
+  height: 34px;
+  padding-top: 1rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  margin-top: -1rem;
+}
+.active:hover {
+  background-color: #fff;
+}
+
+
+/*
+MAIN BODY
+  */
+.login-div {
+  background: url('../src/resources/login-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-div a {
+  color: #ffffff;
+  padding: 7px;
+}
+.login-div a:hover {
+  background-color: #fff;
+  color: #444;
+  transition: all 0.4s ease;
+}
+main .input-div {
+  margin-top: 20px;
+}
+.login-username,.login-password {
+  width: 250px;
+}
+.login-div form {
+  margin: -10rem;
+}
+main .login-btn {
+  width: 250px;
+  height: 40px;
+  background-color: gray;
+  text-transform: uppercase;
+  color: #fff;
+} 
+#status {
+  height: 20px;
+}
+.error{
+  color: red;
+}
+/* articles */
+
+.static-div {
+  position: fixed;
+  margin-top: 13rem;
+  margin-left: 1rem;
+  height: 70vh;
+  float: left;
+}
+section form {
+  display: inline-flex;
+  padding: 10px;
+}
+
+section input {
+  background-color: #eee;
+}
+section button {
+  background-color: grey;
+  color: #fff;
+  margin-left: 3px;
+  width: 80px;
+  height: 35px;
+  text-transform: uppercase;
+}
+section nav {
+  width: 25%;
+}
+section .breadcrumb {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumb li {
+  background-color: gray;
+  padding: 0.7rem;
+  margin: 3px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.breadcrumb a {
+  color: #fff;
+}
+
+.left-article-section form {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2rem;
+}
+.left-article-section input {
+  width: 100%;
+}
+.left-article-section textarea {
+  border: none;
+  background-color:#eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 7px;
+  width: 100%;
+}
+.left-article-section button {
+ margin-top: 8.5rem;
+}
+/* right section */
+.articles-div{
+  float: right;
+  width: 50%;
+  margin-top: 15rem;
+  scroll-behavior: auto;
+}
+.resources-div {
+  float: right;
+  width: 50%;
+  margin-top: 15rem;
+  scroll-behavior: auto;
+  margin-left: auto;
+}
+article {
+  padding: 1rem;
+  padding-top: 3px;
+  margin-top: 5px;
+  background-color: #eee;
+}
+.articles-div article:hover {
+  box-shadow: #999 0px 0px 5px 5px;
+  transition: all 0.3s ease;
+}
+ h5 {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+small {
+  font-size: x-small;
+} 
+
+.article-item {
+  float: right;
+  width: 50%;
+  margin-top: 15rem; 
+}
+
+.article-item form, .the-article{
+  position: fixed;
+}
+.the-article {
+  width: 45%;
+}
+.article-item form {
+  margin-top: 10rem;
+  margin-bottom: -5rem;
+}
+.comment-div form {
+  margin-top: 7rem;
+}
+.comment-div article {
+  width: 60%;
+  float: right;
+}
+.comments{
+  margin-top: 15rem;
+}
+.item-title {
+  display: flex;
+  justify-content: space-between;
+}
+.close-icon {
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff1111;
+  border-radius: 50%;
+  width: 1rem;
+}
+.display-flex {
+  display: flex;flex-direction: column;
+}
+.d-none {
+  display: none;
+}
+.edit-btn {
+  background-color: grey;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* .resources-div{
+  display: flex;
+  flex-wrap: wrap;
+} */
+.forgot-password, .change-password {
+  position: absolute;
+  margin-top: 13.2rem;
+  background-color: #555;
+  opacity: 0.5;
+  height: 71.8vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forgot-password,.change-password .form-div {
+  background-color: #fff;
+  height: 40vh;
+  width: 30%;
+  box-shadow: #000 0px 10px 15px 10px;
+}
+
+.forgot-password,.change-password input {
+ width: 95%;
+ color: #000;
+ outline-color: #00f;
+ border: 1px solid #00f;
+}
+.forgot-password,.change-password button:hover {
+  width: 95%;
+  transition: all 0.5s ease;
+  border: 1px solid #00f;
+  outline-width: 1px;
+  background-color: #fff;
+  color: #000;
+}
+
+
+
